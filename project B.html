@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Gerardo Fernandez</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Project</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">SQL & Tableau project</h1>
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<p>Business Questions:
+								Which holidays affect weekly sales the most?
+								Which stores in the dataset have the lowest and highest unemployment rate?  What factors do you think are impacting the unemployment rate?
+								Is there any correlation between CPI and Weekly Sales?  How does the correlation differ when the Holiday Flag is 0 versus when the Holiday Flag is 1?
+								Why do you think Fuel Price is included in this dataset?  What conclusions can be made about Fuel Price compared to any of the other fields?
+								
+								<br>
+								
+								Original dataset: https://www.kaggle.com/datasets/mikhail1681/walmart-sales <br>
+								1. Build the data base <br>
+								2. Data preprocessing <br>
+								<ol>
+								<li> a. Create a Backup </li>
+								b. Delete Duplicates <br>
+								c. Standardize the data <br>
+									- Data is sorted first by store number (ascending) and second by date (ascending) <br>
+									- Date is in the format MM-DD-YYYY <br>
+									- Weekly Sales is rounded to the nearest 2 decimal places <br>
+									- Temperature is rounded to the nearest whole number <br>
+									- Fuel Price is rounded to the nearest 2 decimal places <br>
+									- CPI is rounded to the nearest 3 decimal places <br>
+									- Unemployment is rounded to the nearest 3 decimal places <br>
+									- Convert Holiday_Flag to int <br>
+									- Ensure that there is no missing data <br>
+								d. Remove unnecesary columns or Rows<br>
+								</ol>								
+								4. Exploratory Data Analysis <br>
+								5. Connect Power BI to the Database<br>
+								6. Used Power Query to change Date to actual Date format<br>
+								7. Created visualisations
+							</p>
+								
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Gerardo Fernandez. All rights reserved.
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
