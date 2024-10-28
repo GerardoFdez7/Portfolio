@@ -127,6 +127,10 @@ canvas {
     z-index: 3;
 }
 
+.no-margin {
+    margin-bottom: 0;
+}
+
 /* ---- stats.js ---- */
 .count-particles {
 	background: #000022;

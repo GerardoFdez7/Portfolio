@@ -19,7 +19,7 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="generic.html" class="active">Project</a></li>
+				<li><a href="project A.html">Next Project</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -30,20 +30,101 @@
 		<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="inner">
-				<h1 class="major">Excel project</h1>
+				<h1 class="major">Bike Sales</h1>
 				<span class="image fit"> <iframe width="962" height="751" frameborder="0" scrolling="no"
 						src="https://1drv.ms/x/c/9933013166d8caae/IQTiF9UWEGpfRavni4TViBU-AfXaP6U8L0Qn0wU0LxiQkSA?em=2&ActiveCell='Dashboard'!L27&Item=BikeDashboard&wdHideGridlines=True&wdDownloadButton=False&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 				</span>
-				<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-					venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-					sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu
-					massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-					Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis,
-					hendrerit tristique.</p>
-				<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
-					dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque
-					leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum
-					convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+				<p>This analysis examines bicycle purchasing patterns based on various demographic and socioeconomic
+					factors, including income, marital status, commuting distance, and age. The project utilized Excel
+					for data processing and created an interactive dashboard that reveals key insights about consumer
+					behavior and bicycle purchasing trends.</p>
+
+				<h2 class="no-margin">Goals</h2>
+				<ul>
+					<li>Evaluate the relationship between income and bicycle purchases by gender</li>
+					<li>Analyze the impact of commuting distance on purchasing decisions</li>
+					<li>Investigate purchase patterns by age groups</li>
+				</ul>
+
+				<h2 class="no-margin">Methodology</h2>
+				<p class="no-margin">
+				<ol>
+					<li>Build the data base</li>
+					<li>Create a Backup</li>
+					<li>Delete Duplicates</li>
+					<li>Standardize the data</li>
+					<ul class="no-margin">
+						<li>Marital status and gender replacement</li>
+						<li>Age brackets creation using IF formula: =IF(L2>=55;"Old";IF(L2>30;"Middle age";IF(L2
+							<30;"Young";"Invalid")))< /li>
+					</ul>
+					<li>Data quality verification</li>
+					<li>Pivot tables creation for analysis</li>
+					<li>Created visualisations</li>
+				</ol>
+
+				<h2 class="no-margin">Tools Used</h2>
+				<ul>
+					<li>Excel: Used for preprocessing and exploratory analysis</li>
+					<li>Pivot Tables: Creation of visualizations and aggregations</li>
+					<li>Dashboard: Interactive interface design with filters</li>
+				</ul>
+				</p>
+
+				<h2 class="no-margin">Analysis</h2>
+				<p class="no-margin">
+					Income Analysis by Gender
+				<ul>
+					<li>Males with bikes earn 7% more than non-buyers</li>
+					<li>Females with bikes show 4% higher income than non-buyers</li>
+					<li>Average income difference between buyers/non-buyers: $3,212</li>
+				</ul>
+
+				Commuting Patterns <br>
+				From 1000 total customers:
+				<ul>
+					<li>0-1 Miles: Highest purchase rate (54.6%)</li>
+					<li>2-5 Miles: Second-highest conversion (58.6%)</li>
+					<li>10 Miles: Lowest purchase rate (29.7%)</li>
+				</ul>
+
+				Age Distribution Highlights
+				<ul>
+					<li>Middle age: Highest concentration (70.1%)</li>
+					<ul class="no-margin">
+						- 54.6% purchase rate
+					</ul>
+					<li>Young segment: Smallest group (11%)</li>
+					<ul class="no-margin">
+						- 35.5% purchase rate
+					</ul>
+
+					<li>Older segment: Moderate participation (18.9%)</li>
+					<ul class="no-margin">
+						- 31.2% purchase rate
+					</ul>
+
+				</ul>
+				</p>
+
+				<h2 class="no-margin">Conclusions</h2>
+				<p class="no-margin">
+					The Excel-based analysis revealed compelling insights into bicycle purchasing behavior,
+					demonstrating strong correlations between income levels, commuting distance, and buying decisions.
+					The data clearly shows that customers with higher incomes and shorter commuting distances (0-1
+					miles) are more likely to purchase bikes, with the middle-age segment driving the majority of sales.
+					These findings provide actionable intelligence for targeted marketing strategies, product
+					development, and market expansion opportunities in high-density, short-commute areas.
+				</p>
+				<br>
+				<p class="no-margin">Original data set: <a
+						href="https://github.com/GerardoFernandez7/BikeSales_Project/blob/main/Original%20Dataset.xlsx"
+						target="_blank">https://github.com/GerardoFernandez7/BikeSales_Project/blob/main/Original%20Dataset.xlsx</a>
+				</p>
+				<p class="no-margin">Work: <a
+						href="https://github.com/GerardoFernandez7/BikeSales_Project/blob/main/Project.xlsx"
+						target="_blank">https://github.com/GerardoFernandez7/BikeSales_Project/blob/main/Project.xlsx</a>
+				</p>
 			</div>
 		</section>
 

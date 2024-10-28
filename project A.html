@@ -19,7 +19,7 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="generic.html" class="active">Project</a></li>
+				<li><a href="project B.html">Next Project</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -30,16 +30,15 @@
 		<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="inner">
-				<h1 class="major">Python & Tableau project</h1>
+				<h1 class="major">United States Population</h1>
 				<span class="image fit">
 
 					<div class='tableauPlaceholder' id='viz1726453377195'><noscript><a
 								href='http:&#47;&#47;127.0.0.1:5501&#47;'><img alt='Dashboard 1 '
 									src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;USCitiesProject&#47;Dashboard1&#47;1_rss.png'
 									style='border: none' /></a>
-								</noscript>
-									<object class='tableauViz'
-							style='display:none;'>
+						</noscript>
+						<object class='tableauViz' style='display:none;'>
 							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
 							<param name='embed_code_version' value='3' />
 							<param name='site_root' value='' />
@@ -55,28 +54,125 @@
 							<param name='display_count' value='yes' />
 							<param name='language' value='es-ES' />
 							<param name='origin' value='viz_share_link' />
-						</object></div>
-					<script
-						type='text/javascript'>                    
-						var divElement = document.getElementById('viz1726453377195'); var vizElement = divElement.getElementsByTagName('object')[0]; 
-						if (divElement.offsetWidth > 800) { vizElement.style.width = '1100px'; vizElement.style.height = '677px'; } 
-						else if (divElement.offsetWidth > 500) { vizElement.style.width = '1100px'; vizElement.style.height = '677px'; } 
-						else { vizElement.style.width = '1100px'; vizElement.style.height = '677px'; } 
-						var scriptElement = document.createElement('script'); 
-						scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+						</object>
+					</div>
+					<script type='text/javascript'>
+						var divElement = document.getElementById('viz1726453377195'); var vizElement = divElement.getElementsByTagName('object')[0];
+						if (divElement.offsetWidth > 800) { vizElement.style.width = '1100px'; vizElement.style.height = '677px'; }
+						else if (divElement.offsetWidth > 500) { vizElement.style.width = '1100px'; vizElement.style.height = '677px'; }
+						else { vizElement.style.width = '1100px'; vizElement.style.height = '677px'; }
+						var scriptElement = document.createElement('script');
+						scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
 						vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 					</script>
 				</span>
-				<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-					venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-					sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu
-					massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-					Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis,
-					hendrerit tristique.</p>
-				<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
-					dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque
-					leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum
-					convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+				<p>This project focuses on analyzing the population of cities in the United States, examining population
+					growth, density, and geographic distribution according to the size and status of each city. The data
+					was collected through web scraping and enriched with information from recent censuses and estimates,
+					allowing an updated perspective on how the size and role of a city influence its growth dynamics.
+				</p>
+
+				<h2 class="no-margin">Goals</h2>
+				<ul>
+					<li>Analyze population growth trends in major U.S. cities.</li>
+					<li>Explore how population density varies across states and city categories.</li>
+					<li>Compare changes in population density and growth across regions.</li>
+				</ul>
+
+				<h2 class="no-margin">Methodology</h2>
+				<p class="no-margin">
+				<ol>
+					<li>Data Collection (Web Scraping)</li>
+					I used BeautifulSoup and Requests to extract data from the Wikipedia page on the largest cities in
+					the United States by population. This phase involved identifying and extracting the relevant table
+					and creating a DataFrame with specific columns such as "City," "ST," "2023 Estimate," among others.
+					The most difficult part of this phase, in my opinion, was the extraction of the categories for each
+					city, since in Wikipedia they are differentiated by color.
+					<li>Data Preprocessing</li>
+					<ul class="no-margin">
+						<li>Delete Duplicates: Duplicate rows were removed to ensure data integrity.</li>
+						<li>Text Cleanup: Regex was used to remove unnecessary characters such as brackets in city
+							names.</li>
+						<li>Data Standardization: Column values ​​were adjusted to display only two decimal places and
+							consistent formats were applied across all columns.</li>
+					</ul>
+					<li>Exploratory Data Analysis (EDA)</li>
+					<ul class="no-margin">
+						<li>Descriptive Statistics: General statistics such as the mean and maximum of the estimated
+							population for 2023 were analyzed.</li>
+						<li>Visualization of Correlations: A correlation heatmap was generated between the numerical
+							variables of the data set.</li>
+						<li>Classification of Cities: The cities with the highest population growth, the highest
+							estimated population in 2023, and the highest population density were analyzed.</li>
+					</ul>
+					<li>Created visualisations</li>
+					Graphs generated with Seaborn and Matplotlib were used to illustrate the distribution and
+					relationship between variables, such as correlations and population density.
+				</ol>
+
+				<h2 class="no-margin">Tools Used</h2>
+				<p class="no-margin">
+				<ul>
+					<li>Python and Pandas: for data cleaning and preprocessing.</li>
+					<li>BeautifulSoup and Requests: for extracting data from the website.</li>
+					<li>Seaborn and Matplotlib: for data visualizations in the exploratory data analysis.</li>
+					<li>Tableau: for creating interactive visualizations that show key insights from the population.
+					</li>
+				</ul>
+				</p>
+
+				<h2 class="no-margin">Analysis</h2>
+				<p class="no-margin">The analysis revealed several important findings:
+				<ul>
+					<li>Density Distribution: States with the highest population density include California and
+						Texas,
+						with dense urban areas being particularly prominent. The State Density visualization on the
+						dashboard reflects these patterns.</li>
+					<li>Population Growth by City Category: Cities classified as capitals or the largest in the
+						state
+						tend to show higher percentages of population change compared to other cities. This can be
+						seen
+						in the Population Change by City chart, where cities like Jackson and Sioux Falls have
+						-6.50%
+						and
+						+7.22% respectively, so the population in Jackson decreased while Sioux Falls increased.
+					</li>
+					<li>Geographic Impact: Western states, like Washington, show significant growth compared to some
+						areas in the Midwest, suggesting that geographic and economic factors contribute to these
+						differences in growth.</li>
+				</ul>
+				</p>
+
+				<h2 class="no-margin">Conclusions</h2>
+				<p class="no-margin">This analysis has revealed significant variations in growth and density
+					patterns,
+					which are largely dependent on the status and location of each city. Cities that serve as state
+					capitals or are the largest in the state tend to grow at higher rates compared to other cities
+					of
+					lesser administrative importance. Geographic and economic factors have also been shown to
+					influence
+					growth dynamics, with western states such as California exhibiting higher population growth than
+					some midwestern states.
+
+					These observations are relevant to urban planning and decision-making in the local development
+					arena, as policymakers can tailor their strategies based on these regional and urban
+					differences.
+					The visualizations developed in Tableau have made it possible to effectively explore and
+					communicate
+					density and growth patterns, highlighting how each category of city contributes to the current
+					population configuration of the United States. This information provides a solid foundation for
+					understanding demographic trends and their impact on the development of urban areas in the
+					country.
+				</p>
+				<br>
+				<p class="no-margin">Original data set: <a
+						href="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population"
+						target="_blank">https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population</a>
+				</p>
+				<p class="no-margin">Source code: <a
+						href="https://github.com/GerardoFernandez7/US_Population_Project.git"
+						target="_blank">https://github.com/GerardoFernandez7/US_Population_Project.git</a></p>
+
 			</div>
 		</section>
 

@@ -19,7 +19,7 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="generic.html" class="active">Project</a></li>
+				<li><a href="project C.html">Next Project</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -30,45 +30,85 @@
 		<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="inner">
-				<h1 class="major">SQL & Power BI project</h1>
-				<span class="image fit"><iframe title="Walmart Sales Project" width="930" height="541.25" scrolling="no" frameborder="0"
-						src="https://app.powerbi.com/reportEmbed?reportId=65f529d0-7ac4-49c2-bb3d-87bd772543f2&autoAuth=true&ctid=73c3e337-a317-4624-bb03-047663c4d9ed"></iframe>
-					</span>
-				<p>Business Questions:
-					Which holidays affect weekly sales the most?
-					Which stores in the dataset have the lowest and highest unemployment rate? What factors do you think
-					are impacting the unemployment rate?
-					Is there any correlation between CPI and Weekly Sales? How does the correlation differ when the
-					Holiday Flag is 0 versus when the Holiday Flag is 1?
-					Why do you think Fuel Price is included in this dataset? What conclusions can be made about Fuel
-					Price compared to any of the other fields?
-
-					<br>
-
-					Original dataset: https://www.kaggle.com/datasets/mikhail1681/walmart-sales <br>
-					1. Build the data base <br>
-					2. Data preprocessing <br>
-				<ol>
-					<li> a. Create a Backup </li>
-					b. Delete Duplicates <br>
-					c. Standardize the data <br>
-					- Data is sorted first by store number (ascending) and second by date (ascending) <br>
-					- Date is in the format MM-DD-YYYY <br>
-					- Weekly Sales is rounded to the nearest 2 decimal places <br>
-					- Temperature is rounded to the nearest whole number <br>
-					- Fuel Price is rounded to the nearest 2 decimal places <br>
-					- CPI is rounded to the nearest 3 decimal places <br>
-					- Unemployment is rounded to the nearest 3 decimal places <br>
-					- Convert Holiday_Flag to int <br>
-					- Ensure that there is no missing data <br>
-					d. Remove unnecesary columns or Rows<br>
-				</ol>
-				4. Exploratory Data Analysis <br>
-				5. Connect Power BI to the Database<br>
-				6. Used Power Query to change Date to actual Date format<br>
-				7. Created visualisations
+				<h1 class="major">Walmart Sales</h1>
+				<span class="image fit"><img src="images/pic05.png" alt="" /></span>
+				<p>To interact with the dashboard, please download it: <a
+						href="https://gerardofernandez7.github.io/Portfolio.github.io/project%20B.html/Walmart Sales Project.pbix"
+						download>Download Dashboard</a></p>
+				<p>
+					This comprehensive analysis examines sales data from 45 Walmart stores over a three-year period
+					(2010-2012), investigating the relationships between weekly sales and various economic indicators
+					including CPI, fuel prices, temperature, and unemployment rates. The project utilized SQL for data
+					preprocessing and analysis, with Power BI for creating interactive visualizations that reveal key
+					insights about store performance and economic impacts on sales patterns.
 				</p>
 
+				<h2 class="no-margin">Goals</h2>
+				<ul>
+					<li>Understand seasonal patterns in sales across different stores</li>
+					<li>Evaluate the impact of holidays on weekly sales performance</li>
+					<li>Investigate how unemployment rates correlate with sales patterns</li>
+				</ul>
+
+				<h2 class="no-margin">Methodology</h2>
+				<p class="no-margin">
+				<ol>
+					<li>Build the data base</li>
+					<li>Create a Backup</li>
+					<li>Delete Duplicates</li>
+					<li>Standardize the data</li>
+					<ul class="no-margin">
+						<li>Date formatting to MM-DD-YYYY</li>
+						<li>Rounding numerical values (Weekly Sales to 2 decimals, Temperature to whole numbers, etc)
+						</li>
+						<li>Converting Holiday Flag to integer type</li>
+						<li>Ensure that there is no missing data</li>
+					</ul>
+					<li>Remove unnecesary columns or Rows</li>
+					<li>Exploratory Data Analysis</li>
+					<li>Connect Power BI to the Database</li>
+					<li>Used Power Query to change Date to actual Date format</li>
+					<li>Created visualisations</li>
+				</ol>
+
+				<h2 class="no-margin">Tools Used</h2>
+				<ul>
+					<li>SQL: Used for data preprocessing and exploratory data analysis</li>
+					<li>Power BI: Created interactive visualizations and dashboard</li>
+					<li>Statistical Analysis: Correlation analysis between various economic indicators</li>
+				</ul>
+				</p>
+
+				<h2 class="no-margin">Analysis</h2>
+				<p>
+					The analysis revealed several significant patterns in Walmart's sales data. Store #20 emerged as the
+					top performer in weekly sales, while holiday periods showed substantial sales increases compared to
+					regular days (450 holiday vs. 5,985 non-holiday observations). Economic indicators painted an
+					interesting picture: an average fuel price of $3.36 and a CPI of 171.58, though correlation analysis
+					showed no strong direct relationship between these factors and sales performance. The data also
+					demonstrated clear seasonal patterns, with notable sales peaks during early 2011 and 2012,
+					particularly during major holidays like Thanksgiving and New Year.
+				</p>
+
+				<h2 class="no-margin">Conclusions</h2>
+				<p class="no-margin">
+					Through detailed SQL analysis and Power BI visualization, this project uncovered valuable insights
+					for Walmart's retail strategy. The findings highlight the crucial role of holiday seasons in driving
+					sales performance, with clear patterns emerging in the three-year dataset. While economic indicators
+					like CPI and fuel prices showed no strong direct correlation with sales, the analysis revealed
+					important seasonal trends and store-specific performance patterns. These insights suggest
+					opportunities for optimizing inventory management during peak periods and applying successful
+					strategies from top-performing stores across the network. The project demonstrates the power of
+					combining robust data analysis with business intelligence tools to derive actionable retail
+					insights, showcasing both technical SQL expertise and strategic business thinking.
+				</p>
+				<br>
+				<p class="no-margin">Original data set: <a
+						href="https://www.kaggle.com/datasets/mikhail1681/walmart-sales"
+						target="_blank">https://www.kaggle.com/datasets/mikhail1681/walmart-sales</a></p>
+				<p class="no-margin">Source code: <a
+						href="https://github.com/GerardoFernandez7/WalmartSales_Project.git"
+						target="_blank">https://github.com/GerardoFernandez7/WalmartSales_Project.git</a></p>
 			</div>
 		</section>
 
