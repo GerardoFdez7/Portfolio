@@ -2885,6 +2885,7 @@ a.title {
 
   .inner > .features {
     padding-left: 1em !important;
+    padding-bottom: 1.5em !important;
   }
 }
 
@@ -3683,10 +3684,7 @@ body.is-preload .wrapper.fade > .inner {
   color: rgba(44, 34, 27, 0.507);
   border-top: solid 2px rgba(0, 0, 0, 0.125);
   list-style: none;
-  margin: -4em 0 0em 0;
-  /* Ajusta este margen según sea necesario */
   padding: 2em 0 0 0;
-  /* Ajusta este relleno según sea necesario */
   width: 100%;
 }
 
@@ -3704,6 +3702,10 @@ body.is-preload .wrapper.fade > .inner {
   padding-left: 1em;
   justify-content: center;
   align-items: center;
+}
+
+#main .no-margin a {
+  word-break: break-all; /* Para URLs largas en móviles */
 }
 
 /* Sidebar */
