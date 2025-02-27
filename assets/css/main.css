@@ -2800,6 +2800,7 @@ a.title {
   position: relative;
   max-width: 100%;
   width: auto;
+  padding: 150px;
   
 }
 
@@ -2855,7 +2856,7 @@ a.title {
 }
 
 /* Poner imagen encima del proyecto */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 980px) {
   .spotlights > section {
     flex-direction: column !important;
     align-items: center; 
@@ -2867,6 +2868,7 @@ a.title {
     margin-left: 2em !important;
     margin-top: 2em !important;
     margin-right: 2em !important;
+    padding: 50px !important;
   }
 
   .spotlights > section > .content {
@@ -2875,8 +2877,18 @@ a.title {
     text-align: center !important;
   }
 
+  .actions {
+    justify-content: center !important;
+    margin-left: 0 !important;
+  }
+
   .inner.right-align {
     text-align: center !important;
+  }
+
+  .actions.right-button {
+    justify-content: center !important;
+    margin-left: 0 !important;
   }
 
   .inner {
