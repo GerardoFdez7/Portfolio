@@ -114,7 +114,7 @@
 	<section id="two" class="wrapper style3 fade-up">
 		<div class="inner">
 			<h2>About me</h2>
-			<p>I am 20 years old, originally from the Dominican Republic and currently living in Guatemala City,
+			<p id="age-paragraph">I am <span id="age"></span> years old, originally from the Dominican Republic and currently living in Guatemala City,
 				where I am pursuing
 				a degree in Computer Science Engineering at Universidad del Valle de Guatemala. Since I am 13 years
 				old I am
@@ -235,3 +235,22 @@
 </body>
 
 </html>
+
+<script>
+    function updateAge() {
+        const birthYear = 2004;
+        const birthMonth = 7;
+        const birthDay = 28;
+        const today = new Date();
+        let age = today.getFullYear() - birthYear;
+        const birthdayThisYear = new Date(today.getFullYear(), birthMonth, birthDay);
+
+        if (today < birthdayThisYear) {
+            age--;
+        }
+
+        document.getElementById('age').textContent = age;
+    }
+
+    updateAge();
+</script>
